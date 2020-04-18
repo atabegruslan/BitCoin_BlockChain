@@ -1,0 +1,26 @@
+<%- include('header') %>
+
+<h2>BTC - USD Converter</h2>
+
+<input type="text" id="btc" value="1" onkeyup="btcusd()" onChange="btcusd()" />
+<input type="text" id="usd" value="<%= marketPrice %>" onkeyup="usdbtc()" onChange="usdbtc()" />
+
+<script>
+	var marketPrice = <%= marketPrice %>;
+
+	var btc = document.getElementById('btc');
+	var usd = document.getElementById('usd');
+
+	function btcusd() 
+	{
+		usd.value = (btc.value * marketPrice).toFixed(2);
+	}
+
+	function usdbtc() 
+	{
+		btc.value = (usd.value / marketPrice).toFixed(8);
+	}
+
+</script>
+
+<%- include('footer') %>

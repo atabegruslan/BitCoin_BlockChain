@@ -1,0 +1,18 @@
+<%- include('header') %>
+
+<h2>Create Brain Wallet</h2>
+
+<form method="post" action="/wallet">
+	<input type="text" name="brainsrc">
+	<input type="submit" name="Go">
+</form>
+
+<%if (typeof url1 !== 'undefined') { %>
+	<p>See yourself at: <a href="<%= url1 %>"><%= url1 %></a></p>
+<% } %>
+
+<%if (typeof url2 !== 'undefined') { %>
+	<p>Search yourself at: <a href="<%= url2 %>"><%= url2 %></a></p>
+<% } %>
+
+<%- include('footer') %>
