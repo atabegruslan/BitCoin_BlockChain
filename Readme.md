@@ -17,3 +17,5 @@
 - https://www.blockchain.com/api/blockchain_api
 - https://www.npmjs.com/package/bitcore-lib
 - https://www.blockchain.com/api/exchange_rates_api
+- https://www.youtube.com/watch?v=bBC-nXj3Ng4
+- 
